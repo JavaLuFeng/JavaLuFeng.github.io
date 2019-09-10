@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3185da9d-511c-41ef-ab96-52265ed8e3f1" name="Default Changelist" comment="第一次提交config-server">
+    <list default="true" id="3185da9d-511c-41ef-ab96-52265ed8e3f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configserver-test2.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state>
+              <caret lean-forward="true" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testread2/configserver-test2.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -54,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/testserverread1/configserver-test1" />
         <option value="$PROJECT_DIR$/configserver-test2.yml" />
+        <option value="$PROJECT_DIR$/testread2/configserver-test2.yml" />
       </list>
     </option>
   </component>
@@ -94,6 +104,11 @@
             <path>
               <item name="configserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="configserver" type="462c0819:PsiDirectoryNode" />
+              <item name="testread2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="configserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="configserver" type="462c0819:PsiDirectoryNode" />
               <item name="testserverread1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -106,13 +121,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testread2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot\configserver\testread2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -238,7 +258,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568042667882</updated>
-      <workItem from="1568042676545" duration="3731000" />
+      <workItem from="1568042676545" duration="5112000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交config-server">
       <created>1568090712332</created>
@@ -247,11 +267,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568090712332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二次提交：新增test2文件">
+      <created>1568105676856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568105676856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3731000" />
+    <option name="totallyTimeSpent" value="5112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="407" y="0" width="1120" height="792" extended-state="0" />
@@ -292,7 +319,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交config-server" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交config-server" />
+    <MESSAGE value="第二次提交：新增test2文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次提交：新增test2文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -307,8 +335,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configserver-test2.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        <state>
+          <caret lean-forward="true" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testread2/configserver-test2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>

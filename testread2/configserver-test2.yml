@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: test
+server:
+  port: 9080
+---
+spring:
+  profiles: test
+  application:
+    name: test-config-server
+---
+spring:
+  profiles: prod
+  application:
+    name: prod-config-server

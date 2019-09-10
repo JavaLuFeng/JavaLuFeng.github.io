@@ -1,0 +1,50 @@
+server:
+  port: 5000
+eureka:
+  client:
+    service-url:
+      #      这个defaultZone的key不能乱写名字。。。
+      defaultZone: http://eureka3000:3000/eureka
+  #    serviceUrl:
+  #      defaultZone: http://eureka3000:3000/eureka
+  instance:
+    #    需要注册的客户端的实例id，是唯一的
+    instance-id: user
+    #    是否显示ip地址
+    prefer-ip-address: true
+    #    eureka服务端在收到实例最后一次心跳反应后，需要等待多长时间才将实例删除，默认为90秒
+    #  ---结合相应服务端的实例清理时间，也就是当某客户端挂了后 ,距离上次清理最长时间是这个时间加上清理间隔时间？？
+    lease-expiration-duration-in-seconds: 30
+    #    eureka实例间隔多长时间向服务端发送心跳，表示客户端实例仍然活着，默认为30秒
+    lease-renewal-interval-in-seconds: 10
+
+spring:
+  application:
+    name: client-user
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000  #默认hystrix调用超时时间为1秒，超时监听默认打开，默认为1秒
+
+      circuitBreaker:
+        requestVolumeThreshold: 5   #断路器的请求失败门槛数,10秒中失败请求数量门槛，测试模拟：可以设置10秒内连续请求触发5次异常，后面就直接走fallback方法，不会再请求目标微服务了
+feign:
+  hystrix:
+    enabled: true   #开启feign对hystrix的支持
+
+    #对于熔断机制，是通过断路器实现的，默认是开启断路器支持的，但是可以强制一直开启或关闭断路器开关
+    #默认支持断路器情况下，断路器默认10秒中的滚动窗口时间下，20个请求连续失败的情况下，会打开断路器开关，
+    #然后，每5秒会去检查断路器开关是否关闭，
+    #还有配置请求失败率来衡量断路器开关是否开启或关闭
+    #当然，上述这些都是可以配置的！！
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #向和hystrix一起使用，用于监控项目运行状况，actuator暴露监控端点，finchley版本之前默认开启暴露，比较新的版本需要再这里开启
